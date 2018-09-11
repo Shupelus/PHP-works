@@ -60,7 +60,7 @@ if($comment_password==$result['password'])//パスワード認証
 		編集対象番号:
 		<input type="text" name='edit'>
 		<input type="submit" value="編集"><br>
-		<input type="text" name='edit_check' value="<?php if($pass_check=="true" && $not_empty_edit){echo $edit;}?>">
+		<input type="" name='edit_check' value="<?php if($pass_check=="true" && $not_empty_edit){echo $edit;}?>">
 
 	</form>
 </head>
@@ -121,7 +121,6 @@ foreach($results as $row)
 	echo $row['id'].',';
 	echo $row['name'].',';
 	echo $row['comment'].',';
-	echo $row['send_time'].',';
-	echo $row['password']."<br>";
+	echo $row['send_time']."<br>";
 	}
 ?>
